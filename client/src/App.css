@@ -1,0 +1,526 @@
+/* body {
+  width: 100vh;
+  height: 100vh;
+} */
+
+
+/* ======================== App ======================== */
+
+.App {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  /* border: 2px solid red; */
+  /* overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; */
+
+  /* background-image: linear-gradient(to bottom right, white 2%, rgb(32, 170, 185) 90%, rgba(32, 171, 196, 1)); */
+}
+
+/* ======================== Nav ======================== */
+
+.Nav {
+  position: fixed;
+  padding-top: 0;
+  top: 0;
+  width: 100%;
+  height: 8%;
+  /* background-image: radial-gradient(circle 506px at 50.6% 16.5%, rgba(239, 252, 250, 1) 5.5%, rgba(154, 192, 206, 1) 100.2%); */
+  /* background: rgb(16, 32, 49, 0.8); */
+  /* background: rgb(255, 255, 255, 0.5); */
+
+  /* background-image: radial-gradient(circle at 100%, #131329 0%, #3a3a42 40%, #9999a0 60%, rgb(255, 255, 255) 65%, rgb(255, 255, 255) 95%, #bec0c2); */
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  z-index: 1;
+
+}
+
+.nav-links {
+  position: absolute;
+  list-style-type: none;
+  width: 40%;
+  display: flex;
+  background-color: none;
+  justify-content: space-around;
+}
+
+.dots {
+  /* position: absolute; */
+  position: sticky;
+  top: 0;
+  left: 85%;
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid white;
+
+}
+
+
+.nav-links li {
+
+  color: rgba(0, 0, 0, 0.975);
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+
+  width: 90px;
+  height: 18px;
+  margin: 10px;
+  border-radius: 15px;
+  text-align: center;
+  font: 13px/1.4 'Merienda One', Helvetica, sans-serif;
+  text-decoration: none;
+  cursor: default;
+  background-color: none;
+
+}
+
+.nav-links i {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  top: -1px;
+
+}
+
+/* ======================== Home ======================== */
+
+.Home {
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+  /* color: rgba(0, 0, 0, 0.5); */
+  text-shadow: 0px 3px 4px 0px;
+  letter-spacing: 4px;
+  background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #4D53AF 87%, rgb(59, 57, 187) 95%, #05138A 100%);
+  z-index: -1;
+}
+
+#homePic {
+  z-index: -1;
+  /* opacity: 0.94; */
+}
+
+
+.myName {
+  position: relative;
+  display: flex;
+  left: 25%;
+  top: 20%;
+  width: 50vw;
+  height: 60vh;
+  text-shadow: 3px 1px 10px rgba(0, 0, 0, 0.5);
+  animation: Levitation 4s linear infinite;
+
+}
+
+
+
+
+@keyframes Levitation {
+
+  0% {
+    transform: translate(0px)
+  }
+
+  25% {
+    transform: translate(5px)
+  }
+
+  50% {
+    transform: translateY(5px)
+  }
+
+  75% {
+    transform: translate(-5px)
+  }
+
+  100% {
+    transform: translateY(0px)
+  }
+
+}
+
+.IM {
+  position: absolute;
+  display: flex;
+  font-size: 1.5rem;
+
+}
+
+.NIV {
+  position: absolute;
+  display: flex;
+  font-size: 1.5rem;
+
+  top: 7vh;
+}
+
+.AZENKOT {
+
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  font-size: 1.5rem;
+  width: 50vw;
+  height: 10vh;
+  top: 14vh;
+}
+
+.aboutMe {
+  position: absolute;
+  display: flex;
+  align-self: flex-start;
+  top: 32vh;
+  width: 50vw;
+  height: 15vh;
+
+  font-size: 1rem;
+}
+
+
+.animation {
+  position: absolute;
+  /* left: 0%; */
+  margin-left: 0%;
+  flex-direction: column;
+  z-index: -1;
+}
+
+/* ======================== Professional ======================== */
+
+.professional {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+
+  text-shadow: 0px 3px 4px 0px;
+  letter-spacing: 4px;
+  background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+  z-index: -1;
+}
+
+#professionalPic {
+  z-index: -1;
+  opacity: 1;
+}
+
+
+
+.professional-title {
+  font-size: 2.8rem;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  text-shadow: 3px 1px 10px rgba(0, 0, 0, 0.5);
+  animation: Levitation 4s linear infinite;
+
+}
+
+.professionals-lang {
+  position: absolute;
+  top: 82%;
+  width: 100%;
+  left: 19.5%;
+  flex-direction: row;
+  height: 10vh;
+  width: 90vh;
+  display: flex;
+  z-index: -1;
+  text-align: left;
+}
+
+.professionals-lang h6 {
+  position: absolute;
+}
+
+.lang-title {
+  display: flex;
+  align-self: center;
+  position: relative;
+  padding: 18px;
+  margin: 35px;
+
+  text-align: left;
+  width: 2px;
+  animation: profLangs 4s linear infinite;
+  color: rgb(0, 0, 0);
+
+  z-index: -1;
+
+}
+
+
+.lang-title h6 {
+  font-size: 0.7rem;
+}
+
+
+
+
+@keyframes profLangs {
+
+
+  50% {
+    transform: translateX(5px)
+  }
+
+  100% {
+    transform: translateX(0px)
+  }
+
+}
+
+
+/* #lang-title-long {
+  border: 2px solid black;
+} */
+
+/* .professional-animataion {
+  position: absolute;
+  left: 0%;
+  flex-direction: column;
+} */
+
+
+/* !!!!!!!!!!!!!!!!!!!!! this is how to change css settings when screen size changed !!!!!!!!!!!!!!!!!!!!!!! */
+
+/* @media screen and (max-width: 1024px) {
+  .professional{}
+}  */
+
+/* ======================== About Me ======================== */
+
+.AboutMePage {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+  /* color: rgba(0, 0, 0, 0.5); */
+  text-shadow: 0px 3px 4px 0px;
+  letter-spacing: 4px;
+  background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #4A53B0 95%);
+  /* border: 2px solid yellow; */
+}
+
+.aboutMe-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150vh;
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+
+
+  /* border: 2px solid blue; */
+  z-index: 1;
+
+}
+
+
+
+.aboutMeTitle {
+  position: absolute;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  text-shadow: 3px 1px 10px rgba(0, 0, 0, 0.5);
+  animation: Levitation 4s linear infinite;
+}
+
+.aboutMeTitle h6 {
+  font-size: 2rem;
+}
+
+
+#aboutMesvg {
+  animation: anim 2s linear infinite;
+}
+
+@keyframes anim {
+
+  0%,
+  100% {
+    filter: blur(1px);
+    opacity: 1;
+  }
+
+  6%,
+  95% {
+    filter: blur(0px);
+    opacity: 0;
+  }
+
+  90%,
+  100% {
+    filter: blur(1px);
+    opacity: 1;
+  }
+}
+
+@keyframes aboutMeAnimation {
+
+  0%,
+  100% {
+    color: #FAD1B1;
+    filter: blur(1px);
+  }
+
+  6%,
+  95% {
+    color: #EF6C00;
+    filter: blur(1px);
+  }
+}
+
+.aboutMe-main {
+  /* border: 2px solid green; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150vh;
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+
+.text {
+  position: absolute;
+  width: 140vh;
+
+  border-radius: 25px;
+  text-align: center;
+  left: 0%;
+  top: -30%;
+}
+
+#aboutMe-text {
+  font-size: 22px;
+  margin-left: 50px;
+  letter-spacing: 1px;
+}
+
+.text-selector img {
+  width: 25px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.text-selector {
+  position: absolute;
+  width: 140vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 85%;
+}
+
+/* ======================== Contact ======================== */
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact h1 {
+  margin-top: 50px;
+}
+
+.contact-input {
+  height: 50vh;
+  margin-top: 10vh;
+  /* border: 2px solid black; */
+}
+
+#inputs-div {
+  margin: 40px;
+}
+
+.contact-input input {
+
+  margin-left: 10px;
+}
+
+.contact-input button {
+  border: 2px solid green;
+  position: relative;
+  left: 20%;
+}
+
+.inputs-div {
+  height: 10vh;
+  width: 40vh;
+  top: 10px;
+
+  /* border: 2px solid black; */
+  display: flexbox;
+
+}
+
+.contact-inputs {
+  border-radius: 10px 10px 10px 10px;
+}
+
+#Message {
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  /* border: 2px solid red; */
+}
+
+/* .fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+} */

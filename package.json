@@ -1,0 +1,24 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "cv-website N.A",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Niv Azenkot",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "create-react-app": "^3.4.0",
+    "epxress": "0.0.1-security",
+    "mongodb": "^3.5.4",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
